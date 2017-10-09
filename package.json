@@ -1,0 +1,21 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "simple gateway",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gray <long1795@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "events": "^1.1.1",
+    "express": "^4.15.4",
+    "lodash": "^4.17.4",
+    "log4js": "^2.3.4",
+    "redis": "^2.8.0",
+    "uuid": "^3.1.0"
+  }
+}

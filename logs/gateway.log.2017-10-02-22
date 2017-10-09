@@ -1,0 +1,212 @@
+[2017-10-02 22:44:03.232] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:44:03.242] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:44:03.245] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:44:54.537] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:44:54.541] [DEBUG] default - ./services walked
+[2017-10-02 22:44:54.544] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:44:54.545] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:44:54.546] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:45:02.876] [DEBUG] default - listener for event[response-45ea6090-a780-11e7-a8d6-ab8ff6b702d5] started
+[2017-10-02 22:45:02.876] [DEBUG] default - event[testtarget1] triggered
+[2017-10-02 22:45:02.877] [DEBUG] default - evnet[testtarget1] emited, [1] listeners listening
+[2017-10-02 22:45:05.880] [DEBUG] default - event[response-45ea6090-a780-11e7-a8d6-ab8ff6b702d5] triggered and then removed
+[2017-10-02 22:45:05.887] [INFO] default - Request[45ea6090-a780-11e7-a8d6-ab8ff6b702d5] processed completely in 3013ms
+[2017-10-02 22:45:05.888] [DEBUG] default - event[response-45ea6090-a780-11e7-a8d6-ab8ff6b702d5] emited, [0] listeners listening
+[2017-10-02 22:47:23.435] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:47:23.440] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:47:23.440] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:47:23.441] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:47:23.441] [DEBUG] default - ./services walked
+[2017-10-02 22:47:23.441] [INFO] default - all listeners started
+[2017-10-02 22:51:43.480] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:51:43.485] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:51:43.486] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:51:43.486] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:51:43.487] [DEBUG] default - ./services walked
+[2017-10-02 22:51:43.487] [INFO] default - all listeners started
+[2017-10-02 22:51:43.496] [INFO] default - testtarget2
+[2017-10-02 22:51:43.496] [INFO] default - [Function]
+[2017-10-02 22:51:43.499] [INFO] default - testtarget1
+[2017-10-02 22:51:43.499] [INFO] default - [Function]
+[2017-10-02 22:52:17.119] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:52:17.125] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:52:17.125] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:52:17.126] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:52:17.126] [DEBUG] default - ./services walked
+[2017-10-02 22:52:17.126] [INFO] default - all listeners started
+[2017-10-02 22:52:17.126] [INFO] default - testtarget2
+[2017-10-02 22:52:17.127] [INFO] default - 
+[2017-10-02 22:52:17.127] [INFO] default - testtarget1
+[2017-10-02 22:52:17.127] [INFO] default - 
+[2017-10-02 22:53:55.996] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:53:56.001] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:53:56.002] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:53:56.002] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:53:56.003] [DEBUG] default - ./services walked
+[2017-10-02 22:53:56.003] [INFO] default - all listeners started
+[2017-10-02 22:53:56.003] [INFO] default - testtarget2
+[2017-10-02 22:53:56.003] [INFO] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:53:56.004] [INFO] default - testtarget1
+[2017-10-02 22:53:56.004] [INFO] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:55:14.430] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:55:14.436] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:55:14.436] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:55:14.437] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:55:14.437] [DEBUG] default - ./services walked
+[2017-10-02 22:55:14.437] [INFO] default - all listeners started
+[2017-10-02 22:55:14.437] [INFO] default - --------------------listeners for testtarget2 :--------------------
+[2017-10-02 22:55:14.438] [INFO] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:55:14.438] [INFO] default - --------------------------------------------------
+[2017-10-02 22:55:14.438] [INFO] default - --------------------listeners for testtarget1 :--------------------
+[2017-10-02 22:55:14.438] [INFO] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:55:14.438] [INFO] default - --------------------------------------------------
+[2017-10-02 22:56:29.741] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:56:29.744] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:56:29.745] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:56:29.745] [DEBUG] default - ./services walked
+[2017-10-02 22:56:29.745] [INFO] default - all listeners started
+[2017-10-02 22:56:29.746] [INFO] default - --------------------listeners for testtarget2 :--------------------
+[2017-10-02 22:56:29.746] [INFO] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:56:29.746] [INFO] default - --------------------------------------------------
+[2017-10-02 22:56:29.746] [INFO] default - --------------------listeners for testtarget1 :--------------------
+[2017-10-02 22:56:29.747] [INFO] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:56:29.747] [INFO] default - --------------------------------------------------
+[2017-10-02 22:56:29.747] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:56:58.980] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:56:58.983] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:56:58.984] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:56:58.984] [DEBUG] default - ./services walked
+[2017-10-02 22:56:58.984] [INFO] default - all listeners started
+[2017-10-02 22:56:58.985] [DEBUG] default - --------------------listeners for testtarget2 :--------------------
+[2017-10-02 22:56:58.985] [DEBUG] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:56:58.985] [DEBUG] default - --------------------------------------------------
+[2017-10-02 22:56:58.986] [DEBUG] default - --------------------listeners for testtarget1 :--------------------
+[2017-10-02 22:56:58.986] [DEBUG] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:56:58.986] [DEBUG] default - --------------------------------------------------
+[2017-10-02 22:56:58.986] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:57:15.317] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:57:15.321] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:57:15.321] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:57:15.322] [DEBUG] default - ./services walked
+[2017-10-02 22:57:15.322] [INFO] default - all listeners started
+[2017-10-02 22:57:15.322] [DEBUG] default - --------------------listeners for [testtarget2] :--------------------
+[2017-10-02 22:57:15.322] [DEBUG] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:57:15.323] [DEBUG] default - --------------------------------------------------
+[2017-10-02 22:57:15.323] [DEBUG] default - --------------------listeners for [testtarget1] :--------------------
+[2017-10-02 22:57:15.323] [DEBUG] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 3000)
+}
+[2017-10-02 22:57:15.323] [DEBUG] default - --------------------------------------------------
+[2017-10-02 22:57:15.323] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:58:43.149] [INFO] default - listener for event[testtarget2] started 
+[2017-10-02 22:58:43.153] [DEBUG] default - ./services/testdir walked
+[2017-10-02 22:58:43.153] [INFO] default - listener for event[testtarget1] started 
+[2017-10-02 22:58:43.153] [DEBUG] default - ./services walked
+[2017-10-02 22:58:43.154] [INFO] default - all listeners started
+[2017-10-02 22:58:43.154] [DEBUG] default - --------------------listeners for [testtarget2] :--------------------
+[2017-10-02 22:58:43.154] [DEBUG] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 30)
+}
+[2017-10-02 22:58:43.154] [DEBUG] default - --------------------------------------------------
+[2017-10-02 22:58:43.155] [DEBUG] default - --------------------listeners for [testtarget1] :--------------------
+[2017-10-02 22:58:43.155] [DEBUG] default - (headers, body) => {
+  logger.debug(`event[${NAME}] triggered`)
+  let eid = 'response-' + headers.r_id
+  setTimeout(() => {
+    emitter.emit(eid, body)
+    let num = emitter.listenerCount(eid)
+    logger.debug(`event[${eid}] emited, [${num}] listeners listening`)
+  }, 300)
+}
+[2017-10-02 22:58:43.155] [DEBUG] default - --------------------------------------------------
+[2017-10-02 22:58:43.155] [INFO] default - Server started. Listening on port 3000.
+[2017-10-02 22:58:46.208] [DEBUG] default - listener for event[response-30a905e0-a782-11e7-b166-71031a3a54a8] started
+[2017-10-02 22:58:46.208] [DEBUG] default - event[testtarget1] triggered
+[2017-10-02 22:58:46.209] [DEBUG] default - evnet[testtarget1] emited, [1] listeners listening
+[2017-10-02 22:58:46.512] [DEBUG] default - event[response-30a905e0-a782-11e7-b166-71031a3a54a8] triggered and then removed
+[2017-10-02 22:58:46.521] [INFO] default - Request[30a905e0-a782-11e7-b166-71031a3a54a8] processed completely in 315ms
+[2017-10-02 22:58:46.522] [DEBUG] default - event[response-30a905e0-a782-11e7-b166-71031a3a54a8] emited, [0] listeners listening
